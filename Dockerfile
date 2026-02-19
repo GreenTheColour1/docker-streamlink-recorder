@@ -1,5 +1,5 @@
 FROM python:3.12.2
-LABEL maintainer="lauwarm@mailbox.org"
+LABEL maintainer="greenthecolour2000@gmail.com"
 
 #ENV streamlinkVersion=6.7.4
 #ENV PATH "${HOME}/.local/bin:${PATH}"
