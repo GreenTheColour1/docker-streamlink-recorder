@@ -17,7 +17,7 @@ LABEL maintainer="lauwarm@mailbox.org"
 
 RUN apt-get update && apt-get install gosu && apt-get install python3-pip -y
 
-RUN pip3 install --upgrade git+https://github.com/streamlink/streamlink.git
+RUN pip3 install --upgrade streamlink
 
 RUN  echo 'export PATH="${HOME}/.local/bin:${PATH}"'
 
