@@ -25,6 +25,8 @@ RUN mkdir /home/download
 RUN mkdir /home/script
 RUN mkdir /home/plugins
 
+ENV XDG_CACHE_HOME=/tmp/.cache
+
 #RUN git clone https://github.com/Damianonymous/streamlink-plugins.git
 #RUN cp /streamlink-plugins/*.py /home/plugins/
 
