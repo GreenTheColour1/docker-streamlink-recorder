@@ -1,8 +1,6 @@
 FROM python:3.12.2
 LABEL maintainer="lauwarm@mailbox.org"
 
-ENV streamlinkCommit=01d401f7db6dd44bed4f31b00817b241824aaa2a
-
 #ENV streamlinkVersion=6.7.4
 #ENV PATH "${HOME}/.local/bin:${PATH}"
 
@@ -19,7 +17,7 @@ ENV streamlinkCommit=01d401f7db6dd44bed4f31b00817b241824aaa2a
 
 RUN apt-get update && apt-get install gosu && apt-get install python3-pip -y
 
-RUN pip3 install --upgrade git+https://github.com/streamlink/streamlink.git@${streamlinkCommit}
+RUN pip3 install --upgrade git+https://github.com/streamlink/streamlink.git
 
 RUN  echo 'export PATH="${HOME}/.local/bin:${PATH}"'
 
